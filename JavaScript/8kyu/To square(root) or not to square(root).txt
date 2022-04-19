@@ -1,0 +1,10 @@
+function squareOrSquareRoot(array) {
+  for (var i = 0; i < array.length; i++) {
+    if (Math.sqrt (array [i]) % 1 == 0) {   //проверяем, является ли корень числа целым
+      array [i] = Math.sqrt (array [i]);    //вычисляем корень числа
+    } else {
+      array [i] = Math .pow (array [i], 2); //возводим число в квадрат
+    }    
+  }
+  return array;  
+}
