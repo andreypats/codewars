@@ -1,0 +1,7 @@
+function defineSuit(card) {
+  let suit = card[card.length - 1]; 
+  return suit == '♣' ? 'clubs'
+    : suit == '♦' ? 'diamonds'
+    : suit == '♥' ? 'hearts'
+    : 'spades';
+}
