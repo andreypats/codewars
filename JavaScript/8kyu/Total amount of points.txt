@@ -1,0 +1,14 @@
+function points(games) {
+  let points = 0;
+  for (let i = 0; i < games.length; i++) {
+    let a = games[i][0];
+    let b = games[i][2];
+    if (a > b) {
+      points += 3
+    }  
+    if (a == b) {
+      points += 1
+    }
+  }
+  return points;
+}
