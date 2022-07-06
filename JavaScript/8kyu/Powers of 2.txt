@@ -1,0 +1,7 @@
+function powersOfTwo(n){
+  let arr = [];  
+  for (let j = 0; j <= n; j++) {
+    arr.push(2**j);    
+  }   
+  return arr;
+}
