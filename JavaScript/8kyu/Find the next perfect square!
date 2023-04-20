@@ -1,0 +1,5 @@
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  let num = Math.sqrt(sq)
+  return Number.isInteger(num) ? Math.pow((num + 1), 2) : -1
+}
