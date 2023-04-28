@@ -1,0 +1,7 @@
+function sumArray(array) {
+  let sum = 0
+  if (array && array.length > 1) {
+    sum = array.reduce((acc, num) => acc + num, 0) - array.reduce((x, y) => Math.min(x, y)) - array.reduce((x, y) => Math.max(x, y))
+  }
+  return sum
+}
