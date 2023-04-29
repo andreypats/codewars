@@ -1,0 +1,12 @@
+function XO(str) {   
+  let newStr = str.toLowerCase()
+  if (!newStr.includes('x') && !newStr.includes('o')) return true
+  let sum1 = 0
+  let sum2 = 0
+  for (let i = 0; i < newStr.length; i++) {
+    if (newStr[i] === 'x') sum1++
+    if (newStr[i] === 'o') sum2++     
+  }
+  if (sum1 === sum2) return true    
+  return false
+}
