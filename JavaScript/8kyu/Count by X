@@ -1,0 +1,9 @@
+function countBy(x, n) {
+  let z = [x];
+  let step = x;
+  for (let i = 1; i < n; i++) {
+    x += step
+    z.push(x)
+  }
+  return z;
+}
