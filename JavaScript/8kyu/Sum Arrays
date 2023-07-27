@@ -1,0 +1,6 @@
+// Sum Numbers
+function sum (numbers) {
+ return numbers.reduce(function(sum, elem) {
+	  return sum + elem;
+  }, 0);
+};
