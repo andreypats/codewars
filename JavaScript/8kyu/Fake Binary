@@ -1,0 +1,11 @@
+function fakeBin(x){
+  let newStr = '';
+  for (i = 0; i < x.length; i++) {
+    x[i] < 5 ? newStr = newStr + '0'  : newStr = newStr + '1';
+  };
+  return newStr;
+};
+
+function fakeBin(x) {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+}
