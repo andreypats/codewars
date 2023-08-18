@@ -1,0 +1,9 @@
+function pipeFix(numbers){
+  let min = numbers[0]
+  let max = numbers.pop()
+  let arr = []
+  for (i = min; i <= max; i++) {
+    arr.push(i)
+  }
+  return arr
+}
