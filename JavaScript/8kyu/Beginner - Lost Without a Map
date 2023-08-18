@@ -1,0 +1,12 @@
+function maps(x){
+  let arr = []
+  for (i = 0; i < x.length ; i++) {
+    arr.push(x[i]+x[i])
+  }
+  return arr
+}
+
+
+function maps(x){
+  return x.map(n => n * 2);
+}
