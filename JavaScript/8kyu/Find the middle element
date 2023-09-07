@@ -1,0 +1,19 @@
+function gimme (triplet) {
+  let min = triplet[0];
+  let max = triplet[0];
+  for (let i = 0; i < triplet.length; i++) {
+    if (triplet[i] < min) {
+      min = triplet[i]
+    } 
+    if (triplet[i] > max) {
+      max = triplet[i]
+    }
+  }
+  let middle = triplet.filter(e=> min < e && e < max)
+  return triplet.indexOf(middle[0])
+}
+
+
+function gimme(a) {
+  return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
+}
