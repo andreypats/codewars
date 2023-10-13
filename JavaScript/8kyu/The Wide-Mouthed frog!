@@ -1,0 +1,10 @@
+function mouthSize(animal) {
+  let mouth = ''
+  animal === 'alligator' ? mouth = 'small' : mouth = 'wide'
+  return mouth
+}
+
+
+function mouthSize(animal) {
+  return animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
+}
