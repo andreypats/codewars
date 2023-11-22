@@ -1,0 +1,8 @@
+function shortcut (string) {
+  return string.replace(/a|e|i|o|u/gi,'');
+}
+
+
+function shortcut(string){
+  return string.replace(/[aeiou]/g,'')
+}
