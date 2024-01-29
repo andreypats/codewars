@@ -3,3 +3,9 @@ function toFreud(string) {
   let result = string.replace(replaceSex, "sex");
   return result;
 }
+
+function toFreud(string) {
+  let replaceSex = /\w+'\w+|\w+/gi;
+  let result = string.replace(replaceSex, "sex");
+  return result;
+}
